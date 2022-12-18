@@ -1,7 +1,7 @@
 # game_grid_generator
 Creates a random grid of game banners.
 
-![alt text](image.gif)
+![alt text](im
 
 ![alt text](image2.gif)
 
