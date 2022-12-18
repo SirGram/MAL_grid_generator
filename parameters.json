@@ -3,7 +3,7 @@
     "MAX_SEARCHES" : 50
   } ,
   "grid.py" : {
-    "DELETE_IMAGES" : false ,
+    "DELETE_IMAGES" : true,
     "FULL_SCREEN_WINDOW" : false ,
     "ROW_SIZE" : 5 ,
     "COLUMN_SIZE" : 8 ,
@@ -11,5 +11,8 @@
     "PADDING" : 50 ,
     "PADDING_CELL" : 0 ,
     "BACKGROUND_COLOR" : "white"
+  },
+  "anime_list.py": {
+    "USER": "gadrona"
   }
 }

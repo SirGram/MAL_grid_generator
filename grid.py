@@ -5,15 +5,18 @@ import os
 import random
 import anime
 import json
+import anime_list
 
 canvas_list = []
 coord_list = []
+
 def init_param():
     # PARAMETERS
     with open("parameters.json") as f:
         data = json.load(f)
         h = data["grid.py"]
         g = data["anime.py"]
+        i= data["anime_list.py"]
 
         global BACKGROUND_COLOR
         global DELETE_IMAGES
@@ -34,6 +37,8 @@ def init_param():
         FULL_SCREEN_WINDOW = h["FULL_SCREEN_WINDOW"]
 
         anime.MAX_SEARCHES = g["MAX_SEARCHES"]
+
+        anime_list.user=i["USER"]
 
 
 def init():
@@ -147,6 +152,9 @@ class CreateLabel():
 
 if __name__=="__main__":
     init_param()
+    #Search user MALanime list
+    anime_list.init()
+    anime_list.main()
     #Web scrape MAL
     anime.init()
     if len(os.listdir("./ANIMEIMAGES/"))==0:

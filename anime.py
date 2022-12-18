@@ -82,7 +82,7 @@ def worker():
 
 def main():
     for i in range(MAX_SEARCHES):
-        t = threading.Thread(target=worker())
+        t = threading.Thread(target=worker)
         thread_list.append(t)
         t.start()
     for i in thread_list:
