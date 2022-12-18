@@ -1,7 +1,5 @@
 {
-  "anime.py" : {
-    "MAX_SEARCHES" : 50
-  } ,
+
   "grid.py" : {
     "DELETE_IMAGES" : true,
     "FULL_SCREEN_WINDOW" : false ,

@@ -11,23 +11,26 @@ thread_list = []
 searchlist = []
 image_url_list=[]
 
-MAX_SEARCHES=20
-
 total_searches = 0
 def init():
+
     #Create dir
     global dir
     dir="ANIMEIMAGES"
     if not os.path.exists(dir):
         os.mkdir(dir)
 
+    # Read list_of_anime.txt
+    with open("list_of_animes.txt", errors="ignore") as f:
+        lines = f.readlines()
+        for line in lines:
+            searchlist.append(line.strip())
+    global MAX_SEARCHES
+    MAX_SEARCHES = len(searchlist)
+    print(f"Searching for: {MAX_SEARCHES}")
 def soup_mal():
     try:
-        # Read list_of_anime.txt
-        with open("list_of_animes.txt", errors="ignore") as f:
-            lines = f.readlines()
-            for line in lines:
-                searchlist.append(line.strip())
+
         global search
         search = searchlist[random.randrange(len(searchlist))]
 

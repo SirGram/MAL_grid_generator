@@ -15,7 +15,7 @@ def init_param():
     with open("parameters.json") as f:
         data = json.load(f)
         h = data["grid.py"]
-        g = data["anime.py"]
+
         i= data["anime_list.py"]
 
         global BACKGROUND_COLOR
@@ -36,7 +36,6 @@ def init_param():
         PADDING_CELL = h["PADDING_CELL"]
         FULL_SCREEN_WINDOW = h["FULL_SCREEN_WINDOW"]
 
-        anime.MAX_SEARCHES = g["MAX_SEARCHES"]
 
         anime_list.user=i["USER"]
 
@@ -71,17 +70,14 @@ def check_coord(i,j,type):
     if type == "big":
         if (i, j) not in coord_list and (i + 1, j + 1) not in coord_list and (i + 1, j) not in coord_list and (
                 i, j + 1) not in coord_list and j != COLUMN_SIZE-1 and i != ROW_SIZE-1:
-            print("big fit")
+
             return True
         else:
-            print("big no fit")
             return False
     elif type=="small":
         if (i, j) not in coord_list :
-            print("small fit")
             return True
         else:
-            print("small no fit")
             return False
 def screenshot():
     #Screenshot window
@@ -96,6 +92,7 @@ def screenshot():
     print("Image saved in ./COLLAGE ")
 def delete_images():
     if DELETE_IMAGES:
+        print("Images deleted")
         files = glob.glob("./ANIMEIMAGES/*")
         for f in files:
             os.remove(f)
@@ -115,7 +112,9 @@ def main():
                 if type=="small":
                     j+=1
                     continue
-
+            if len(image_list)==0:
+                print("not enough images")
+                break
             item=image_list[-1]
             print(f"Check {item}")
             canvas=CreateLabel(item, i, j, type)
