@@ -28,10 +28,8 @@ Screenshot of grid saved in ./COLLAGE
 
 Parameter		    						 |  Default Value | Action|Category
 | :---:   | :---: | :---: | :---: |
-RESIZE 	|		      							True		|						Downloaded images to be resized from original width and height.|	grid.py
-DELETE_IMAGES |									True	|							Delete images from folder after making grid.|	grid.py
+DELETE_IMAGES |									False	|							Delete images from folder after making grid.|	grid.py
 FULLSCREEN_WINDOW  		|					False	|							Make tkinter root Fullscreen.|	grid.py
-CLOSE_WINDOW_AFTER_SEARCH	|			False	|							Quit window after 2s of showing the grid.|	grid.py
 ROW_SIZE				|								5			|							Indicate row length.|	grid.py
 COLUMN_SIZE 			|							5			|							Indicate column length.|	grid.py
 GRID_SIZE 	|					120			|						Indicate width and height of image canvas resizing in pixels.|grid.py	
