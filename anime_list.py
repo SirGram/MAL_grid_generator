@@ -6,7 +6,7 @@ user="gadrona"
 
 user_anime_list=[]
 CLIENT_ID = '55f439e17559afd1b6c348f72a850e71'
-url = f'https://api.myanimelist.net/v2/users/{user}/animelist?fields=id,title,mean'
+
 
 def request():
     response = requests.get(url, headers = {
@@ -20,6 +20,8 @@ def request():
     response.close()
 
 def init():
+    global url
+    url = f'https://api.myanimelist.net/v2/users/{user}/animelist?fields=id,title,mean'
     #delete list_of_animes.txt
     with open("list_of_animes.txt","w") as f:
         f.write("")
