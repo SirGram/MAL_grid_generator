@@ -28,5 +28,7 @@ PADDING								|					50			|							Indicates window padding in pixels.|	grid.py
 PADDING_CELL	|				0			|							Indicates cell padding in pixels.|	grid.py
 BACKGROUND_COLOR 					|	 	 "white"	|						Indicates window background color.|	steam.py
 USER				|	 	 ""	|						MY ANIME LIST username|	anime_list.py
+API			|	 	 ""	|						MY ANIME LIST API|	anime_list.py
+
 
 ----------------------------------------------------------------
