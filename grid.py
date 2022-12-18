@@ -154,4 +154,5 @@ if __name__=="__main__":
     #Order images into grid
     init()
     main()
+    delete_images()
 
