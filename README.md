@@ -1,7 +1,7 @@
 # anime_grid_generator
 Creates a random grid of anime banners from your MY ANIME LIST account.
 
-![alt text](image.png)
+![alt text](example.png)
 
 ----------------------------------------------------------------
 
