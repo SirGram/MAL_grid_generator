@@ -9,11 +9,6 @@ Change parameters and MAL __user__ in __parameters.json__
 
 ----------------------------------------------------------------
 
-pip install bs4
-| :---:   | 
-
-----------------------------------------------------------------
-
 Run __grid.py__ 
 
 __anime_list.py__ and __anime.py__ are subrun. 
