@@ -38,6 +38,7 @@ def init_param():
 
 
         anime_list.user=i["USER"]
+        anime_list.API=i["API"]
 
 
 def init():

@@ -5,7 +5,9 @@ import requests
 user=""
 
 user_anime_list=[]
-CLIENT_ID = ''
+API=""
+CLIENT_ID=API
+
 
 
 def request():
