@@ -2,10 +2,10 @@ import requests
 
 
 
-user="gadrona"
+user=""
 
 user_anime_list=[]
-CLIENT_ID = '55f439e17559afd1b6c348f72a850e71'
+CLIENT_ID = ''
 
 
 def request():
