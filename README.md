@@ -1,11 +1,9 @@
 # MAL_grid_generator
-Creates a random grid of MY ANIME LIST images.
+Creates a random grid of __MY ANIME LIST__ images.
 
 ![alt text](example.gif)
 
 ----------------------------------------------------------------
-
-
 
 Change parameters and MAL __user__ in __parameters.json__
 
@@ -18,7 +16,7 @@ pip install bs4
 
 Run __grid.py__ 
 
-__anime.py__ and __anime__ are subrun. 
+__anime_list.py__ and __anime.py__ are subrun. 
 
 Screenshot of grid saved in ./COLLAGE
 
